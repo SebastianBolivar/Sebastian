@@ -1,0 +1,15 @@
+void setup() {
+  Serial.begin (9600);
+  pinMode (PA2, OUTPUT); // sensor ultrasonido
+  pinMode (PA1, OUTPUT); // sensor ultrasonido
+  pinMode (PA4, OUTPUT); // sonido
+  digitalWrite (PA2, HIGH);
+}
+
+void loop() {
+  tone(PA4,1000,250);
+  delay (300);
+  tone (PA4,900,250);
+  delay (300);
+
+}
